@@ -1,6 +1,7 @@
 let engineIndicatorLight = 'red blinking';
 let fuelLevel = 50;
 let engineTemperature = 4500;
+let commmandOveride = true;
 
 
 
