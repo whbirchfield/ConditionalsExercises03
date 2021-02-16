@@ -1,9 +1,7 @@
 let engineIndicatorLight = 'red blinking';
-let fuelLevel = 50;
-let engineTemperature = 4500;
-let commmandOveride = true;
-
-
+let fuelLevel = 21000;
+let engineTemperature = 2500;
+let commandOveride = true;
 
 /* 5) Implement the following checks using if/else if/else statements:
 
@@ -35,6 +33,12 @@ if (fuelLevel >= 20000 && engineTemperature <= 2500){
   console.log("ENGING FAILURE IMMINENT!");
 } else {
   console.log("Fuel and engine satus pending...");
+}
+
+if (fuelLevel >20000 && engineIndicatorLight != 'red blinking' || commandOveride == true){
+  console.log("Cleared to launch!")
+} else {
+  console.log("Launch scrubbed!");
 }
 
 
